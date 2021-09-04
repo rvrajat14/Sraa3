@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RadioTableCell" rowHeight="44" id="KGk-i7-Jjw" customClass="RadioTableCell" customModule="SRAA3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3T-PU-h05">
+                        <rect key="frame" x="58" y="10" width="231" height="23.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="0.63283925513698636" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Si-9q-nad">
+                        <rect key="frame" x="8" y="2" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="XN9-Ir-xIG"/>
+                            <constraint firstAttribute="height" constant="40" id="qU0-lw-q6f"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                        <state key="normal" image="radio_off"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u3T-PU-h05" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="4N0-ld-OQS"/>
+                    <constraint firstItem="u3T-PU-h05" firstAttribute="leading" secondItem="3Si-9q-nad" secondAttribute="trailing" constant="10" id="9kt-YB-a8z"/>
+                    <constraint firstItem="3Si-9q-nad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="EIU-dE-bG7"/>
+                    <constraint firstAttribute="bottom" secondItem="u3T-PU-h05" secondAttribute="bottom" constant="10" id="Lxv-4O-Tvt"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="u3T-PU-h05" secondAttribute="trailing" constant="15" id="dh6-Ys-hob"/>
+                    <constraint firstItem="3Si-9q-nad" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nHK-a5-Klt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="3Si-9q-nad" id="eff-hE-dsI"/>
+                <outlet property="variantsNameLbl" destination="u3T-PU-h05" id="4AZ-0Q-GQc"/>
+            </connections>
+            <point key="canvasLocation" x="22.399999999999999" y="56.671664167916049"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio_off" width="16" height="16"/>
+    </resources>
+</document>

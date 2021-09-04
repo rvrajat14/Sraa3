@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddImageCollectionCell" customModule="SRAA3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-qu-hiW">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_image_doted" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-wU-Rnl">
+                                <rect key="frame" x="10" y="13" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="EXX-Bq-Ltz"/>
+                                    <constraint firstAttribute="width" constant="80" id="N21-bA-3rx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBs-b3-eI1">
+                                <rect key="frame" x="10" y="13" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1tX-dh-6go"/>
+                                    <constraint firstAttribute="width" constant="80" id="umg-ps-S2n"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKl-pi-C0Z">
+                                <rect key="frame" x="75" y="6" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="7NI-bl-o2r"/>
+                                    <constraint firstAttribute="height" constant="26" id="tgf-ML-Mj3"/>
+                                </constraints>
+                                <state key="normal" image="cross_red"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fYb-wU-Rnl" firstAttribute="top" secondItem="eMh-qu-hiW" secondAttribute="top" constant="13" id="3FK-4U-INj"/>
+                            <constraint firstItem="jBs-b3-eI1" firstAttribute="leading" secondItem="fYb-wU-Rnl" secondAttribute="leading" id="5Jx-NL-9f3"/>
+                            <constraint firstAttribute="height" constant="100" id="69v-zK-nWZ"/>
+                            <constraint firstItem="jBs-b3-eI1" firstAttribute="top" secondItem="fYb-wU-Rnl" secondAttribute="top" id="LOU-DN-FnJ"/>
+                            <constraint firstItem="fYb-wU-Rnl" firstAttribute="leading" secondItem="eMh-qu-hiW" secondAttribute="leading" constant="10" id="Wm7-n8-oee"/>
+                            <constraint firstItem="fYb-wU-Rnl" firstAttribute="top" secondItem="aKl-pi-C0Z" secondAttribute="bottom" constant="-19" id="aP0-bj-Gci"/>
+                            <constraint firstItem="jBs-b3-eI1" firstAttribute="height" secondItem="fYb-wU-Rnl" secondAttribute="height" id="b5S-5S-URG"/>
+                            <constraint firstItem="aKl-pi-C0Z" firstAttribute="leading" secondItem="fYb-wU-Rnl" secondAttribute="trailing" constant="-15" id="fj1-Wm-VO2"/>
+                            <constraint firstAttribute="width" constant="100" id="o3Q-Eu-Hpw"/>
+                            <constraint firstItem="jBs-b3-eI1" firstAttribute="width" secondItem="fYb-wU-Rnl" secondAttribute="width" id="rbz-TW-2TG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="eMh-qu-hiW" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" id="1EQ-xG-szx"/>
+                <constraint firstItem="eMh-qu-hiW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="B5Q-EH-FpX"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="eMh-qu-hiW" secondAttribute="leading" id="USw-tk-8WO"/>
+                <constraint firstItem="eMh-qu-hiW" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="dHI-mx-fwN"/>
+            </constraints>
+            <size key="customSize" width="94" height="101"/>
+            <connections>
+                <outlet property="crossBtn" destination="aKl-pi-C0Z" id="Z9D-b7-NDp"/>
+                <outlet property="imageV" destination="fYb-wU-Rnl" id="ibG-Dn-Yl6"/>
+                <outlet property="selectImageBtn" destination="jBs-b3-eI1" id="fY3-k3-7BQ"/>
+            </connections>
+            <point key="canvasLocation" x="172.46376811594203" y="86.049107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cross_red" width="24" height="24"/>
+        <image name="select_image_doted" width="201" height="201"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

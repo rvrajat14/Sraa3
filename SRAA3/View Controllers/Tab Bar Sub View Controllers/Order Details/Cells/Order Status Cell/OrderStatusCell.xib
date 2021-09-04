@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderStatusCell" rowHeight="116" id="KGk-i7-Jjw" customClass="OrderStatusCell" customModule="SRAA3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="#ERC123" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXD-0c-eU6">
+                        <rect key="frame" x="118" y="7" width="192" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="fQZ-Y4-Qin"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, 1:55 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeW-iH-gZ1">
+                        <rect key="frame" x="118" y="51.5" width="192" height="18"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="seN-s5-9WY">
+                        <rect key="frame" x="10" y="9" width="98" height="98"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="98" id="aIW-4v-S21"/>
+                            <constraint firstAttribute="width" constant="98" id="lBK-lo-Ofj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air Conditon Repair" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-YJ-vXa">
+                        <rect key="frame" x="118" y="30" width="192" height="20.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfC-6Y-a1C">
+                        <rect key="frame" x="118" y="74.5" width="128" height="30"/>
+                        <color key="backgroundColor" red="0.41568627450000001" green="0.76862745099999996" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="CRd-5b-ZCt"/>
+                            <constraint firstAttribute="width" constant="128" id="weS-PZ-uuj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ae8-YJ-vXa" firstAttribute="top" secondItem="HXD-0c-eU6" secondAttribute="bottom" constant="1" id="1bW-T8-mse"/>
+                    <constraint firstAttribute="trailing" secondItem="JeW-iH-gZ1" secondAttribute="trailing" constant="10" id="Au9-8D-tbU"/>
+                    <constraint firstAttribute="trailing" secondItem="ae8-YJ-vXa" secondAttribute="trailing" constant="10" id="D3C-nV-ztn"/>
+                    <constraint firstItem="seN-s5-9WY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="H94-do-bJ7"/>
+                    <constraint firstItem="hfC-6Y-a1C" firstAttribute="top" secondItem="JeW-iH-gZ1" secondAttribute="bottom" constant="5" id="H9M-S9-8dM"/>
+                    <constraint firstItem="ae8-YJ-vXa" firstAttribute="leading" secondItem="HXD-0c-eU6" secondAttribute="leading" id="HLh-ew-oyY"/>
+                    <constraint firstItem="JeW-iH-gZ1" firstAttribute="top" secondItem="ae8-YJ-vXa" secondAttribute="bottom" constant="1" id="HSd-bg-Hl6"/>
+                    <constraint firstAttribute="bottom" secondItem="hfC-6Y-a1C" secondAttribute="bottom" constant="11" id="X3Q-0f-xDV"/>
+                    <constraint firstItem="JeW-iH-gZ1" firstAttribute="leading" secondItem="ae8-YJ-vXa" secondAttribute="leading" id="Zvt-Fw-DEb"/>
+                    <constraint firstItem="HXD-0c-eU6" firstAttribute="leading" secondItem="seN-s5-9WY" secondAttribute="trailing" constant="10" id="bvf-gq-8VN"/>
+                    <constraint firstItem="hfC-6Y-a1C" firstAttribute="leading" secondItem="JeW-iH-gZ1" secondAttribute="leading" id="fio-Qe-rN2"/>
+                    <constraint firstItem="seN-s5-9WY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="n68-4a-p1a"/>
+                    <constraint firstItem="HXD-0c-eU6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="ogC-V6-hg1"/>
+                    <constraint firstAttribute="trailing" secondItem="HXD-0c-eU6" secondAttribute="trailing" constant="10" id="vfq-UU-rnu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLbl" destination="JeW-iH-gZ1" id="LRy-K8-XoJ"/>
+                <outlet property="imgV" destination="seN-s5-9WY" id="TN9-eN-rzh"/>
+                <outlet property="orderIdLbl" destination="HXD-0c-eU6" id="psj-H9-soW"/>
+                <outlet property="orderStatusLbl" destination="hfC-6Y-a1C" id="Yey-Eb-ixZ"/>
+                <outlet property="titleLbl" destination="ae8-YJ-vXa" id="412-Be-itP"/>
+            </connections>
+            <point key="canvasLocation" x="97.5" y="114.61267605633803"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="235" height="235"/>
+    </resources>
+</document>

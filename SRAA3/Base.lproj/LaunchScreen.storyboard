@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="Uvd-Qt-Zzu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sraa_iconn" translatesAutoresizingMaskIntoConstraints="NO" id="dOq-84-e5H">
+                                <rect key="frame" x="30" y="223.5" width="315" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="atq-Ab-6B8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-90-6eA">
+                                <rect key="frame" x="105" y="631" width="165" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="N7d-Cr-Q58"/>
+                                    <constraint firstAttribute="height" constant="16" id="ze4-QV-nxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Goteso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWr-QN-EQl">
+                                <rect key="frame" x="133.5" y="611" width="108.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="7Kc-67-TzJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PFB-90-6eA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="37Y-bD-lU3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dOq-84-e5H" secondAttribute="trailing" constant="30" id="4J1-eB-20p"/>
+                            <constraint firstItem="Uvd-Qt-Zzu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QMH-vR-rhT"/>
+                            <constraint firstItem="xWr-QN-EQl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Xoz-8j-oXa"/>
+                            <constraint firstItem="dOq-84-e5H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ZeN-ls-aP2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uvd-Qt-Zzu" secondAttribute="trailing" id="dd4-rn-sgK"/>
+                            <constraint firstItem="PFB-90-6eA" firstAttribute="top" secondItem="xWr-QN-EQl" secondAttribute="bottom" constant="2" id="fjS-9b-rWz"/>
+                            <constraint firstItem="dOq-84-e5H" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gO7-Mu-o1g"/>
+                            <constraint firstItem="Uvd-Qt-Zzu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j1D-7m-bFq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uvd-Qt-Zzu" secondAttribute="bottom" id="uhl-jS-xKs"/>
+                            <constraint firstItem="dOq-84-e5H" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-20" id="x8J-Nl-OHC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PFB-90-6eA" secondAttribute="bottom" constant="20" id="yfM-W1-Oax"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_background" width="1125" height="2001"/>
+        <image name="sraa_iconn" width="1651" height="639"/>
+    </resources>
+</document>

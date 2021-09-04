@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="PaymentTransactionCell" customModule="SRAA3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2em-18-tVR">
+                        <rect key="frame" x="15" y="6" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="5pd-HR-5G7"/>
+                            <constraint firstAttribute="width" constant="80" id="sKY-cU-YQZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nve-6d-yFL">
+                        <rect key="frame" x="120" y="47" width="183" height="21"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTc-RC-cQH">
+                        <rect key="frame" x="15" y="6" width="80" height="80"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwf-CD-xxy">
+                        <rect key="frame" x="120" y="15" width="182" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Qs4-Of-mhC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vwf-CD-xxy" secondAttribute="trailing" constant="18" id="1Pa-BZ-ABF"/>
+                    <constraint firstItem="vwf-CD-xxy" firstAttribute="leading" secondItem="2em-18-tVR" secondAttribute="trailing" constant="25" id="7Gk-Qv-3OR"/>
+                    <constraint firstItem="Nve-6d-yFL" firstAttribute="leading" secondItem="2em-18-tVR" secondAttribute="trailing" constant="25" id="84I-76-hqU"/>
+                    <constraint firstItem="OTc-RC-cQH" firstAttribute="width" secondItem="2em-18-tVR" secondAttribute="width" id="8YK-nC-Hwm"/>
+                    <constraint firstItem="OTc-RC-cQH" firstAttribute="leading" secondItem="2em-18-tVR" secondAttribute="leading" id="EYV-xN-5Vf"/>
+                    <constraint firstItem="Nve-6d-yFL" firstAttribute="top" secondItem="vwf-CD-xxy" secondAttribute="bottom" constant="8" id="GEc-HN-AgI"/>
+                    <constraint firstAttribute="trailing" secondItem="Nve-6d-yFL" secondAttribute="trailing" constant="17" id="Jxw-nn-NGN"/>
+                    <constraint firstItem="2em-18-tVR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Yp4-Zh-w9I"/>
+                    <constraint firstItem="OTc-RC-cQH" firstAttribute="height" secondItem="2em-18-tVR" secondAttribute="height" id="e1W-qZ-4ZL"/>
+                    <constraint firstItem="vwf-CD-xxy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="iuj-53-KQU"/>
+                    <constraint firstAttribute="bottom" secondItem="2em-18-tVR" secondAttribute="bottom" constant="6.5" id="lzw-Xq-7K3"/>
+                    <constraint firstItem="OTc-RC-cQH" firstAttribute="top" secondItem="2em-18-tVR" secondAttribute="top" id="thT-0s-8o8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLbl" destination="Nve-6d-yFL" id="KRG-ZL-EKT"/>
+                <outlet property="imgV" destination="2em-18-tVR" id="9hh-Wh-xW6"/>
+                <outlet property="selectImgBtn" destination="OTc-RC-cQH" id="ucY-OD-2tk"/>
+                <outlet property="statusLbl" destination="vwf-CD-xxy" id="NBA-lX-9Tc"/>
+            </connections>
+            <point key="canvasLocation" x="367.5" y="194.8943661971831"/>
+        </tableViewCell>
+    </objects>
+</document>

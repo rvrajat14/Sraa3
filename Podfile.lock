@@ -1,0 +1,126 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - CCValidator (1.0.2)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - CropViewController (2.3.8)
+  - DZNEmptyDataSet (1.8.1)
+  - Fabric (1.10.2)
+  - FBSDKCoreKit (8.0.0):
+    - FBSDKCoreKit/Basics (= 8.0.0)
+    - FBSDKCoreKit/Core (= 8.0.0)
+  - FBSDKCoreKit/Basics (8.0.0)
+  - FBSDKCoreKit/Core (8.0.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (8.0.0):
+    - FBSDKLoginKit/Login (= 8.0.0)
+  - FBSDKLoginKit/Login (8.0.0):
+    - FBSDKCoreKit (~> 8.0.0)
+  - GoogleMaps (4.0.0):
+    - GoogleMaps/Maps (= 4.0.0)
+  - GoogleMaps/Base (4.0.0)
+  - GoogleMaps/Maps (4.0.0):
+    - GoogleMaps/Base
+  - GooglePlaces (4.0.0):
+    - GoogleMaps/Base (= 4.0.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.1.0):
+    - AppAuth/Core (~> 1.4)
+    - GTMSessionFetcher (~> 1.4)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+  - IQKeyboardManager (6.5.6)
+  - OneSignal (2.15.3)
+  - PasswordTextField (1.1.0)
+  - razorpay-pod (1.1.6)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CCValidator
+  - Crashlytics
+  - CropViewController
+  - DZNEmptyDataSet
+  - Fabric
+  - FBSDKLoginKit
+  - GoogleMaps
+  - GooglePlaces
+  - GoogleSignIn
+  - IQKeyboardManager
+  - OneSignal
+  - PasswordTextField
+  - razorpay-pod (= 1.1.6)
+  - SDWebImage
+  - SVProgressHUD
+  - SwiftGifOrigin (~> 1.7.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CCValidator
+    - CropViewController
+    - DZNEmptyDataSet
+    - PasswordTextField
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftyJSON
+  trunk:
+    - AppAuth
+    - Crashlytics
+    - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - IQKeyboardManager
+    - OneSignal
+    - razorpay-pod
+    - SwiftGifOrigin
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  CCValidator: 49175409dcd9da1a1bd8d7cc6db31d44a301da84
+  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  CropViewController: 7be882b7d3fb3faef48a41924e80f689e9df2514
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
+  FBSDKCoreKit: 9d27fe97a2fa2abe5eeefea8240e837623ab88e0
+  FBSDKLoginKit: 2cbaf5405379731b22f2ebc224f7c30f62378171
+  GoogleMaps: b7f7fc569a9b354a3af0d9729dbec40957b7d41e
+  GooglePlaces: ca8d4aba09ba79e0a829cf1dca03a41de6a09016
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 197a8dabfea5d665224aa00d17f164fc2248dab9
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  OneSignal: d85b81aa313ed8040522b884f556267883d652c2
+  PasswordTextField: 35ee7f34448c3de061136cf2556a967f1a287476
+  razorpay-pod: 80bbbbd05c3f6ca44654d55f0b3381635983839e
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: 644366d3766862f98105fe563cbf8a896ddf2eb3
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="PromoCodeTableCell" customModule="My_MM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon" translatesAutoresizingMaskIntoConstraints="NO" id="R1D-Q9-cAi">
+                        <rect key="frame" x="16" y="14" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="3ah-e1-bGr"/>
+                            <constraint firstAttribute="width" constant="26" id="uuW-Np-x6K"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0z-PV-nUD">
+                        <rect key="frame" x="62" y="11" width="152" height="21"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5I-Op-Da5">
+                        <rect key="frame" x="62" y="35" width="152" height="18"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLq-rc-NlQ">
+                        <rect key="frame" x="224" y="11" width="80" height="32"/>
+                        <color key="backgroundColor" red="0.073158786079999996" green="0.56056262430000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="bag-lw-fwl"/>
+                            <constraint firstAttribute="width" constant="80" id="jkV-qJ-lfb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                        <state key="normal" title="Apply">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NLq-rc-NlQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="1uO-qo-3JU"/>
+                    <constraint firstItem="j0z-PV-nUD" firstAttribute="leading" secondItem="R1D-Q9-cAi" secondAttribute="trailing" constant="20" id="7c7-6x-lmh"/>
+                    <constraint firstItem="NLq-rc-NlQ" firstAttribute="leading" secondItem="v5I-Op-Da5" secondAttribute="trailing" constant="10" id="OG9-RK-kYO"/>
+                    <constraint firstItem="v5I-Op-Da5" firstAttribute="top" secondItem="j0z-PV-nUD" secondAttribute="bottom" constant="3" id="Ouc-1Y-K13"/>
+                    <constraint firstAttribute="trailing" secondItem="NLq-rc-NlQ" secondAttribute="trailing" constant="16" id="QR0-F6-DyR"/>
+                    <constraint firstItem="R1D-Q9-cAi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="UQk-gj-gZH"/>
+                    <constraint firstItem="NLq-rc-NlQ" firstAttribute="leading" secondItem="j0z-PV-nUD" secondAttribute="trailing" constant="10" id="VTh-ZL-Bcu"/>
+                    <constraint firstItem="v5I-Op-Da5" firstAttribute="leading" secondItem="j0z-PV-nUD" secondAttribute="leading" id="XWg-Ta-fg7"/>
+                    <constraint firstAttribute="bottom" secondItem="v5I-Op-Da5" secondAttribute="bottom" constant="13.5" id="XbN-aV-CZg"/>
+                    <constraint firstItem="R1D-Q9-cAi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="YO7-0g-Rxl"/>
+                    <constraint firstItem="j0z-PV-nUD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="rt1-SC-vMt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="applyButton" destination="NLq-rc-NlQ" id="Zzv-fR-AC9"/>
+                <outlet property="descriptionLbl" destination="v5I-Op-Da5" id="ftS-GL-ZNv"/>
+                <outlet property="offerNameLbl" destination="j0z-PV-nUD" id="gNE-iW-QsB"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="63.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="coupon" width="37" height="37"/>
+    </resources>
+</document>

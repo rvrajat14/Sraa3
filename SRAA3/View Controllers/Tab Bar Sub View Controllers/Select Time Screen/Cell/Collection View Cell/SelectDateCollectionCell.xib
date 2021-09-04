@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectDateCollectionCell" customModule="SRAA3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyo-zV-e5P">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="96"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNs-LD-BOK">
+                                <rect key="frame" x="3" y="27.5" width="79" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="5qN-j2-oxT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.57254901960000004" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1970-01-23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nT-Zk-ovu">
+                                <rect key="frame" x="3" y="50.5" width="79" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" red="0.58039215690000001" green="0.57254901960000004" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nNs-LD-BOK" secondAttribute="trailing" constant="3" id="68q-yn-bAs"/>
+                            <constraint firstItem="3nT-Zk-ovu" firstAttribute="leading" secondItem="Qyo-zV-e5P" secondAttribute="leading" constant="3" id="BzZ-hs-dNX"/>
+                            <constraint firstItem="nNs-LD-BOK" firstAttribute="centerY" secondItem="Qyo-zV-e5P" secondAttribute="centerY" constant="-10" id="DU4-pU-XEI"/>
+                            <constraint firstItem="3nT-Zk-ovu" firstAttribute="top" secondItem="nNs-LD-BOK" secondAttribute="bottom" constant="2" id="Fl8-9o-uRL"/>
+                            <constraint firstAttribute="trailing" secondItem="3nT-Zk-ovu" secondAttribute="trailing" constant="3" id="Ghl-wq-lEP"/>
+                            <constraint firstItem="nNs-LD-BOK" firstAttribute="leading" secondItem="Qyo-zV-e5P" secondAttribute="leading" constant="3" id="TM6-Rp-4ko"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qyo-zV-e5P" secondAttribute="trailing" id="16t-7E-amp"/>
+                <constraint firstItem="Qyo-zV-e5P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ckb-8S-gbc"/>
+                <constraint firstItem="Qyo-zV-e5P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hYG-p4-xyf"/>
+                <constraint firstAttribute="bottom" secondItem="Qyo-zV-e5P" secondAttribute="bottom" id="zYp-9h-fg5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="78" height="96"/>
+            <connections>
+                <outlet property="backV" destination="Qyo-zV-e5P" id="PWI-ig-ljg"/>
+                <outlet property="date_nameLbl" destination="nNs-LD-BOK" id="2F7-VB-v5V"/>
+                <outlet property="datelbl" destination="3nT-Zk-ovu" id="7VW-4l-xeJ"/>
+            </connections>
+            <point key="canvasLocation" x="154.40000000000001" y="175.41229385307346"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="CouponTableCell" customModule="SRAA3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jMH-g3-4n1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="APPLY COUPON" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbq-P2-JcW">
+                                <rect key="frame" x="15" y="11.5" width="265" height="20.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forward_grey" translatesAutoresizingMaskIntoConstraints="NO" id="Rwc-Fr-BmX">
+                                <rect key="frame" x="290" y="15" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="9SC-6b-Fbq"/>
+                                    <constraint firstAttribute="height" constant="15" id="qIB-xl-cwO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fbq-P2-JcW" firstAttribute="centerY" secondItem="jMH-g3-4n1" secondAttribute="centerY" id="4FF-mJ-7F3"/>
+                            <constraint firstItem="fbq-P2-JcW" firstAttribute="leading" secondItem="jMH-g3-4n1" secondAttribute="leading" constant="15" id="Ipd-WS-fNR"/>
+                            <constraint firstAttribute="trailing" secondItem="Rwc-Fr-BmX" secondAttribute="trailing" constant="15" id="SPC-gq-pFO"/>
+                            <constraint firstItem="Rwc-Fr-BmX" firstAttribute="leading" secondItem="fbq-P2-JcW" secondAttribute="trailing" constant="10" id="XBR-5A-gao"/>
+                            <constraint firstItem="Rwc-Fr-BmX" firstAttribute="top" secondItem="jMH-g3-4n1" secondAttribute="top" constant="15" id="evX-Ic-wEh"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vqw-uL-C73">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon" translatesAutoresizingMaskIntoConstraints="NO" id="CV4-vW-88P">
+                                <rect key="frame" x="17" y="9" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7u7-vV-cUj"/>
+                                    <constraint firstAttribute="width" constant="25" id="dsW-2c-2pI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Applied" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHN-Cb-304">
+                                <rect key="frame" x="62" y="11.5" width="218" height="20.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forward_grey" translatesAutoresizingMaskIntoConstraints="NO" id="Xdq-Fk-wac">
+                                <rect key="frame" x="290" y="15" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="koD-ia-m97"/>
+                                    <constraint firstAttribute="height" constant="15" id="xDg-kQ-EaL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xdq-Fk-wac" firstAttribute="leading" secondItem="uHN-Cb-304" secondAttribute="trailing" constant="10" id="FfI-by-5Pp"/>
+                            <constraint firstItem="uHN-Cb-304" firstAttribute="top" secondItem="vqw-uL-C73" secondAttribute="top" constant="11.5" id="P2w-Z9-d4q"/>
+                            <constraint firstItem="Xdq-Fk-wac" firstAttribute="top" secondItem="vqw-uL-C73" secondAttribute="top" constant="15" id="X0h-cd-eIg"/>
+                            <constraint firstAttribute="trailing" secondItem="Xdq-Fk-wac" secondAttribute="trailing" constant="15" id="YjL-iO-NM3"/>
+                            <constraint firstItem="CV4-vW-88P" firstAttribute="top" secondItem="vqw-uL-C73" secondAttribute="top" constant="9" id="k6q-er-kR1"/>
+                            <constraint firstItem="uHN-Cb-304" firstAttribute="leading" secondItem="CV4-vW-88P" secondAttribute="trailing" constant="20" id="ruQ-iF-qP5"/>
+                            <constraint firstItem="CV4-vW-88P" firstAttribute="leading" secondItem="vqw-uL-C73" secondAttribute="leading" constant="17" id="trc-JF-lPV"/>
+                            <constraint firstAttribute="bottom" secondItem="uHN-Cb-304" secondAttribute="bottom" constant="11" id="ySF-r6-hl9"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WF9-ts-uvs">
+                        <rect key="frame" x="10" y="43" width="300" height="24"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="gsdgsgsg" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVT-zn-oPp">
+                                <rect key="frame" x="12" y="4" width="276" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1647058824" green="0.59999999999999998" blue="0.34509803919999998" alpha="0.40999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CVT-zn-oPp" secondAttribute="bottom" constant="3.5" id="DSQ-b3-tm1"/>
+                            <constraint firstItem="CVT-zn-oPp" firstAttribute="leading" secondItem="WF9-ts-uvs" secondAttribute="leading" constant="12" id="G7d-dx-2v3"/>
+                            <constraint firstAttribute="trailing" secondItem="CVT-zn-oPp" secondAttribute="trailing" constant="12" id="Vw8-t3-xBW"/>
+                            <constraint firstItem="CVT-zn-oPp" firstAttribute="top" secondItem="WF9-ts-uvs" secondAttribute="top" constant="4" id="cKT-Ec-b7G"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="WF9-ts-uvs" firstAttribute="top" secondItem="jMH-g3-4n1" secondAttribute="bottom" id="K6K-5q-vgI"/>
+                    <constraint firstItem="WF9-ts-uvs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="KIz-5n-3tm"/>
+                    <constraint firstItem="jMH-g3-4n1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NTf-I5-VZv"/>
+                    <constraint firstItem="jMH-g3-4n1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aJd-y8-Fla"/>
+                    <constraint firstItem="vqw-uL-C73" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cg8-P3-4Zj"/>
+                    <constraint firstItem="vqw-uL-C73" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mge-g3-iiR"/>
+                    <constraint firstAttribute="trailing" secondItem="jMH-g3-4n1" secondAttribute="trailing" id="muN-Dw-i9L"/>
+                    <constraint firstAttribute="trailing" secondItem="vqw-uL-C73" secondAttribute="trailing" id="r6G-KZ-2KO"/>
+                    <constraint firstAttribute="trailing" secondItem="WF9-ts-uvs" secondAttribute="trailing" constant="10" id="u88-W6-7L5"/>
+                    <constraint firstAttribute="bottom" secondItem="WF9-ts-uvs" secondAttribute="bottom" constant="8.5" id="wsr-4a-dBW"/>
+                    <constraint firstItem="WF9-ts-uvs" firstAttribute="top" secondItem="vqw-uL-C73" secondAttribute="bottom" id="yhi-Uo-TDY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="appliedCouponLbl" destination="uHN-Cb-304" id="LCp-9Z-It4"/>
+                <outlet property="appliedView" destination="vqw-uL-C73" id="Bfo-6g-W5j"/>
+                <outlet property="applyCouponLbl" destination="fbq-P2-JcW" id="WRg-Gz-Y2S"/>
+                <outlet property="arrowImagV" destination="Rwc-Fr-BmX" id="1L2-CI-gZo"/>
+                <outlet property="mainView" destination="jMH-g3-4n1" id="CHo-So-WCa"/>
+                <outlet property="msgLbl" destination="CVT-zn-oPp" id="5au-YN-q2e"/>
+                <outlet property="msgView" destination="WF9-ts-uvs" id="eVB-Q3-XQI"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="109"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="coupon" width="37" height="37"/>
+        <image name="forward_grey" width="32" height="32"/>
+    </resources>
+</document>

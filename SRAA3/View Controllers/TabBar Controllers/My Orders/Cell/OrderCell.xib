@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="136" id="KGk-i7-Jjw" customClass="OrderCell" customModule="SRAA3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="132.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJf-jk-k13">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#W12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoc-F7-rCY">
+                                <rect key="frame" x="99" y="11" width="135" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="16"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.54509803921568623" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text=" $400    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZr-QQ-TT6">
+                                <rect key="frame" x="244" y="11" width="61" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="QRm-2S-mdG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Store Address:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB2-VU-NEA">
+                                <rect key="frame" x="99" y="36" width="104.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26 Dec 2016 08:24 PM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfJ-JA-I9E">
+                                <rect key="frame" x="99" y="61" width="124" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" white="0.27819101680000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MK7-ZF-h0d">
+                                <rect key="frame" x="99" y="84" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.41568627450980394" green="0.7686274509803922" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="n5s-v4-ctW"/>
+                                    <constraint firstAttribute="width" constant="145" id="rQA-Vv-kIX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                <state key="normal" title="Ready For Delivery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_item" translatesAutoresizingMaskIntoConstraints="NO" id="ata-b1-cGC">
+                                <rect key="frame" x="2" y="15" width="89" height="98.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="MTc-Bm-ICD"/>
+                                    <constraint firstAttribute="height" constant="98.5" id="ZfD-g5-GHu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ata-b1-cGC" firstAttribute="top" secondItem="aJf-jk-k13" secondAttribute="top" constant="15" id="1Mz-Wi-0QH"/>
+                            <constraint firstItem="ata-b1-cGC" firstAttribute="leading" secondItem="aJf-jk-k13" secondAttribute="leading" constant="2" id="1fl-aK-MhY"/>
+                            <constraint firstAttribute="bottom" secondItem="MK7-ZF-h0d" secondAttribute="bottom" constant="10.5" id="5eF-WL-6Tz"/>
+                            <constraint firstItem="Zoc-F7-rCY" firstAttribute="top" secondItem="aJf-jk-k13" secondAttribute="top" constant="11" id="8a8-W3-zna"/>
+                            <constraint firstItem="VfJ-JA-I9E" firstAttribute="leading" secondItem="ata-b1-cGC" secondAttribute="trailing" constant="8" id="CBO-R8-0zQ"/>
+                            <constraint firstItem="MK7-ZF-h0d" firstAttribute="top" secondItem="VfJ-JA-I9E" secondAttribute="bottom" constant="6.5" id="DUL-TV-hgs"/>
+                            <constraint firstItem="VfJ-JA-I9E" firstAttribute="top" secondItem="TB2-VU-NEA" secondAttribute="bottom" constant="4.5" id="GGY-AN-NX4"/>
+                            <constraint firstItem="MK7-ZF-h0d" firstAttribute="leading" secondItem="ata-b1-cGC" secondAttribute="trailing" constant="8" id="Uur-a0-gUR"/>
+                            <constraint firstItem="Zoc-F7-rCY" firstAttribute="leading" secondItem="ata-b1-cGC" secondAttribute="trailing" constant="8" id="djV-Gm-8fF"/>
+                            <constraint firstItem="TB2-VU-NEA" firstAttribute="top" secondItem="Zoc-F7-rCY" secondAttribute="bottom" constant="3" id="e8Z-hd-c7P"/>
+                            <constraint firstAttribute="trailing" secondItem="UZr-QQ-TT6" secondAttribute="trailing" constant="15" id="iKi-cf-F5a"/>
+                            <constraint firstItem="TB2-VU-NEA" firstAttribute="leading" secondItem="ata-b1-cGC" secondAttribute="trailing" constant="8" id="nfw-AA-tRt"/>
+                            <constraint firstItem="UZr-QQ-TT6" firstAttribute="leading" secondItem="Zoc-F7-rCY" secondAttribute="trailing" constant="10" id="scr-FE-peD"/>
+                            <constraint firstItem="UZr-QQ-TT6" firstAttribute="top" secondItem="aJf-jk-k13" secondAttribute="top" constant="11" id="tnB-nI-heM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="aJf-jk-k13" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LYI-49-LOS"/>
+                    <constraint firstItem="aJf-jk-k13" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Sf5-Ox-jSq"/>
+                    <constraint firstAttribute="bottom" secondItem="aJf-jk-k13" secondAttribute="bottom" constant="8" id="T3C-4f-aWg"/>
+                    <constraint firstAttribute="trailing" secondItem="aJf-jk-k13" secondAttribute="trailing" id="vdQ-ig-Kuf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLbl" destination="VfJ-JA-I9E" id="Ync-7l-MfG"/>
+                <outlet property="imageV" destination="ata-b1-cGC" id="cD6-zT-WPJ"/>
+                <outlet property="nameLbl" destination="TB2-VU-NEA" id="FM3-AV-hQq"/>
+                <outlet property="orderNumberLbl" destination="Zoc-F7-rCY" id="huL-3H-lrq"/>
+                <outlet property="orderStatusButton" destination="MK7-ZF-h0d" id="ASZ-Oj-pGa"/>
+                <outlet property="priceLbl" destination="UZr-QQ-TT6" id="dnx-So-Nsn"/>
+            </connections>
+            <point key="canvasLocation" x="131.25" y="197.00704225352112"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="empty_item" width="40" height="42"/>
+    </resources>
+</document>

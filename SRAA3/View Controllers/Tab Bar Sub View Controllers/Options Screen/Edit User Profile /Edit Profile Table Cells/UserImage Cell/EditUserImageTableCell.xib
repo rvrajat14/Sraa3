@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditUserImageTableCell" id="KGk-i7-Jjw" customClass="EditUserImageTableCell" customModule="TaxiApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtD-Iy-8nv">
+                        <rect key="frame" x="176" y="22" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="67H-mC-HdY"/>
+                            <constraint firstAttribute="height" constant="44" id="F5a-9N-2YA"/>
+                        </constraints>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="zvP-iy-dAC">
+                        <rect key="frame" x="119" y="24" width="82" height="82"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="Q4R-yg-tDt"/>
+                            <constraint firstAttribute="height" constant="82" id="cCt-u1-NdX"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="xtm-7h-Ruh">
+                        <rect key="frame" x="185" y="32" width="24" height="24"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="1Q0-rr-cKV"/>
+                            <constraint firstAttribute="width" constant="24" id="Qy9-MK-h7c"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="zvP-iy-dAC" firstAttribute="top" secondItem="ZtD-Iy-8nv" secondAttribute="bottom" constant="-42" id="R1Z-qt-GI3"/>
+                    <constraint firstItem="zvP-iy-dAC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RP9-ga-ajd"/>
+                    <constraint firstItem="zvP-iy-dAC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ZAx-Af-hcO"/>
+                    <constraint firstItem="xtm-7h-Ruh" firstAttribute="top" secondItem="zvP-iy-dAC" secondAttribute="top" constant="8" id="fx5-Qh-ISs"/>
+                    <constraint firstItem="xtm-7h-Ruh" firstAttribute="leading" secondItem="zvP-iy-dAC" secondAttribute="trailing" constant="-16" id="pgN-YM-w9F"/>
+                    <constraint firstItem="ZtD-Iy-8nv" firstAttribute="leading" secondItem="zvP-iy-dAC" secondAttribute="trailing" constant="-25" id="y53-OW-3HK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="editImageButton" destination="ZtD-Iy-8nv" id="bmH-3F-MXD"/>
+                <outlet property="editImageView" destination="xtm-7h-Ruh" id="JOE-ph-gaW"/>
+                <outlet property="userImageView" destination="zvP-iy-dAC" id="cvs-OS-Rvy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="12" height="12"/>
+        <image name="user_placeholder" width="196" height="196"/>
+    </resources>
+</document>

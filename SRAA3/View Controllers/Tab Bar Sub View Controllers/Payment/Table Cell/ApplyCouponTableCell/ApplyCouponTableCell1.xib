@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ApplyCouponTableCell1" rowHeight="67" id="KGk-i7-Jjw" customClass="ApplyCouponTableCell1" customModule="SRAA3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbA-7b-SB7">
+                        <rect key="frame" x="26" y="22.5" width="160" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="6vE-We-iA1"/>
+                            <constraint firstAttribute="height" constant="35" id="izO-nu-s28"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                        <state key="normal" title="SELECT COUPON">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmw-BN-0oC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="90.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JW-4w-thy">
+                                <rect key="frame" x="26" y="31.5" width="175" height="28"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-Ju-l6P">
+                                <rect key="frame" x="216" y="28" width="88" height="35"/>
+                                <color key="backgroundColor" red="0.792156862745098" green="0.0" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="sPz-GA-9iY"/>
+                                    <constraint firstAttribute="height" constant="35" id="x0j-7y-kuc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                <state key="normal" title="REMOVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9JW-4w-thy" firstAttribute="centerY" secondItem="kmw-BN-0oC" secondAttribute="centerY" id="0J5-s0-Nb1"/>
+                            <constraint firstAttribute="trailing" secondItem="ddd-Ju-l6P" secondAttribute="trailing" constant="16" id="62e-HI-sup"/>
+                            <constraint firstItem="ddd-Ju-l6P" firstAttribute="leading" secondItem="9JW-4w-thy" secondAttribute="trailing" constant="15" id="SId-Zn-AXG"/>
+                            <constraint firstItem="9JW-4w-thy" firstAttribute="top" secondItem="kmw-BN-0oC" secondAttribute="top" constant="31" id="tJz-CT-qZ2"/>
+                            <constraint firstItem="ddd-Ju-l6P" firstAttribute="centerY" secondItem="kmw-BN-0oC" secondAttribute="centerY" id="trc-0N-0OK"/>
+                            <constraint firstItem="9JW-4w-thy" firstAttribute="leading" secondItem="kmw-BN-0oC" secondAttribute="leading" constant="26" id="ySo-yA-0xF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lbA-7b-SB7" secondAttribute="bottom" constant="22" id="6f0-2X-x4q"/>
+                    <constraint firstItem="lbA-7b-SB7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="FCM-Ir-cJa"/>
+                    <constraint firstItem="kmw-BN-0oC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OaR-Wh-hvP"/>
+                    <constraint firstAttribute="bottom" secondItem="kmw-BN-0oC" secondAttribute="bottom" id="Y56-fm-5XM"/>
+                    <constraint firstItem="kmw-BN-0oC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bdr-Fp-jDj"/>
+                    <constraint firstItem="lbA-7b-SB7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="pb4-58-xOy"/>
+                    <constraint firstAttribute="trailing" secondItem="kmw-BN-0oC" secondAttribute="trailing" id="qQg-J4-sjj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="couponButton" destination="ddd-Ju-l6P" id="bRJ-GW-eaP"/>
+                <outlet property="couponLbl" destination="9JW-4w-thy" id="7Zt-3Z-clF"/>
+                <outlet property="couponView" destination="kmw-BN-0oC" id="ngb-a6-ftt"/>
+                <outlet property="offersListButton" destination="lbA-7b-SB7" id="gua-IQ-q8m"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="56.5"/>
+        </tableViewCell>
+    </objects>
+</document>
